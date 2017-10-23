@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FAC-HN-Uxd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="O0d-iF-a18">
+            <objects>
+                <viewController id="pRF-lP-ACM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RTv-pg-7qF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="OvN-Vt-8yX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="FXU-1a-CMy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NpS-gw-Yzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="413"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="IMr-zH-ZHL">
+            <objects>
+                <viewController id="W8j-Vz-Thl" customClass="FirtstViewController" customModule="Golden_Hour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14Q-Cf-CFn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cc-temse-achtergrond-2017" translatesAutoresizingMaskIntoConstraints="NO" id="be2-nH-lRV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="be2-nH-lRV" secondAttribute="height" multiplier="125:84" id="wl2-Hy-58P"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Bx-Xxr">
+                                <rect key="frame" x="8" y="170" width="359" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGS-gI-i2m">
+                                <rect key="frame" x="0.0" y="236" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="be2-nH-lRV" secondAttribute="trailing" id="3St-46-gpf"/>
+                            <constraint firstItem="be2-nH-lRV" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" id="Z6q-Cl-HY3"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="bottom" secondItem="be2-nH-lRV" secondAttribute="bottom" constant="346" id="ZEU-S4-J44"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="top" secondItem="be2-nH-lRV" secondAttribute="top" id="a7l-vF-4dR"/>
+                            <constraint firstItem="EDp-Bx-Xxr" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="c2O-L9-5Wq"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="EDp-Bx-Xxr" secondAttribute="trailing" constant="8" id="cb8-D7-3NB"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="RGS-gI-i2m" secondAttribute="trailing" id="cjK-CP-wxj"/>
+                            <constraint firstItem="RGS-gI-i2m" firstAttribute="top" secondItem="EDp-Bx-Xxr" secondAttribute="bottom" constant="-3.5" id="ect-Xr-baD"/>
+                            <constraint firstItem="EDp-Bx-Xxr" firstAttribute="top" secondItem="be2-nH-lRV" secondAttribute="bottom" constant="-102" id="evU-No-VOb"/>
+                            <constraint firstItem="RGS-gI-i2m" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" id="gvy-i7-67B"/>
+                            <constraint firstItem="EDp-Bx-Xxr" firstAttribute="top" secondItem="xDF-xE-b4D" secondAttribute="top" constant="150" id="zzh-vu-NAn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xDF-xE-b4D"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Today" id="rhP-cN-3LW">
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="hourLabel" destination="EDp-Bx-Xxr" id="WI0-8H-qbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmj-ia-Uqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="-251.42428785607197"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eVP-0Y-KOf">
+            <objects>
+                <tabBarController id="FAC-HN-Uxd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jKM-Qa-qNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W8j-Vz-Thl" kind="relationship" relationship="viewControllers" id="9Ik-6d-oEv"/>
+                        <segue destination="pRF-lP-ACM" kind="relationship" relationship="viewControllers" id="igK-lP-irf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6h7-NE-c8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cc-temse-achtergrond-2017" width="1630" height="1080"/>
+    </resources>
+</document>
