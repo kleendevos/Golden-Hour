@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,39 +33,134 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cc-temse-achtergrond-2017" translatesAutoresizingMaskIntoConstraints="NO" id="be2-nH-lRV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="252"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="be2-nH-lRV" secondAttribute="height" multiplier="125:84" id="wl2-Hy-58P"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Golden Hour Sunset iOS7 iPhone 5 Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="gH4-0U-PuY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Bx-Xxr">
-                                <rect key="frame" x="8" y="170" width="359" height="69.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGS-gI-i2m">
-                                <rect key="frame" x="0.0" y="236" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="185" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Bx-Xxr">
+                                <rect key="frame" x="8" y="110" width="359" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap4-pi-iSn">
+                                <rect key="frame" x="194" y="258" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jzs-dD-LSo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Hour Sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfH-Xz-BEv" userLabel="Golden Hour Sunrise Label">
+                                <rect key="frame" x="8" y="355" width="359" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Hour Sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-NY-hjg" userLabel="Golden Hour Sunrise Label">
+                                <rect key="frame" x="8" y="326" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Hour Sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o86-sJ-ufZ">
+                                <rect key="frame" x="8" y="431" width="359" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Hour Sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-Ri-LbN">
+                                <rect key="frame" x="8" y="404" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpo-YY-iHF">
+                                <rect key="frame" x="16" y="553" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Change Location"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkA-eM-UAi">
+                                <rect key="frame" x="61" y="258" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="I0o-yu-3I5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-HW-xai">
+                                <rect key="frame" x="239" y="220" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="G4R-QL-pah"/>
+                                    <constraint firstAttribute="height" constant="30" id="yGc-YR-zFd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-N9-n6H">
+                                <rect key="frame" x="8" y="86" width="359" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunrise" translatesAutoresizingMaskIntoConstraints="NO" id="PqE-CF-rGo">
+                                <rect key="frame" x="106" y="222" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3sf-8q-Oiz"/>
+                                    <constraint firstAttribute="height" constant="30" id="gyu-ZN-5lY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVK-IL-TYq">
+                                <rect key="frame" x="16" y="501" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Change Date"/>
+                                <connections>
+                                    <action selector="changeDate:" destination="W8j-Vz-Thl" eventType="touchUpInside" id="9Yr-5w-YxI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="be2-nH-lRV" secondAttribute="trailing" id="3St-46-gpf"/>
-                            <constraint firstItem="be2-nH-lRV" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" id="Z6q-Cl-HY3"/>
-                            <constraint firstItem="xDF-xE-b4D" firstAttribute="bottom" secondItem="be2-nH-lRV" secondAttribute="bottom" constant="346" id="ZEU-S4-J44"/>
-                            <constraint firstItem="xDF-xE-b4D" firstAttribute="top" secondItem="be2-nH-lRV" secondAttribute="top" id="a7l-vF-4dR"/>
+                            <constraint firstItem="KHS-N9-n6H" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="1oU-VZ-pdi"/>
+                            <constraint firstItem="PqE-CF-rGo" firstAttribute="top" secondItem="RGS-gI-i2m" secondAttribute="bottom" constant="16" id="5Yl-00-5b2"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="LfH-Xz-BEv" secondAttribute="trailing" constant="8" id="7o3-rz-n0G"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="LIK-NY-hjg" secondAttribute="trailing" constant="8" id="C2P-1Y-5xO"/>
+                            <constraint firstItem="o86-sJ-ufZ" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="C7r-OV-mb5"/>
+                            <constraint firstItem="LIK-NY-hjg" firstAttribute="top" secondItem="RGS-gI-i2m" secondAttribute="bottom" constant="120" id="DyJ-N6-IaI"/>
+                            <constraint firstItem="KHS-N9-n6H" firstAttribute="top" secondItem="xDF-xE-b4D" secondAttribute="top" constant="66" id="IVK-IA-PnV"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="KHS-N9-n6H" secondAttribute="trailing" constant="8" id="JoS-Bd-a7Q"/>
+                            <constraint firstItem="o86-sJ-ufZ" firstAttribute="top" secondItem="5mN-Ri-LbN" secondAttribute="bottom" constant="6.5" id="Nf5-pC-ErX"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="ap4-pi-iSn" secondAttribute="trailing" constant="61" id="OSh-hH-5c9"/>
+                            <constraint firstItem="LfH-Xz-BEv" firstAttribute="top" secondItem="LIK-NY-hjg" secondAttribute="bottom" constant="8" id="PLS-np-QSm"/>
+                            <constraint firstItem="5mN-Ri-LbN" firstAttribute="top" secondItem="LfH-Xz-BEv" secondAttribute="bottom" constant="16" id="RUj-mI-s8F"/>
+                            <constraint firstItem="QkA-eM-UAi" firstAttribute="top" secondItem="PqE-CF-rGo" secondAttribute="bottom" constant="6" id="a4N-vY-WjG"/>
                             <constraint firstItem="EDp-Bx-Xxr" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="c2O-L9-5Wq"/>
+                            <constraint firstItem="LfH-Xz-BEv" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="cRy-cB-jd7"/>
                             <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="EDp-Bx-Xxr" secondAttribute="trailing" constant="8" id="cb8-D7-3NB"/>
                             <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="RGS-gI-i2m" secondAttribute="trailing" id="cjK-CP-wxj"/>
-                            <constraint firstItem="RGS-gI-i2m" firstAttribute="top" secondItem="EDp-Bx-Xxr" secondAttribute="bottom" constant="-3.5" id="ect-Xr-baD"/>
-                            <constraint firstItem="EDp-Bx-Xxr" firstAttribute="top" secondItem="be2-nH-lRV" secondAttribute="bottom" constant="-102" id="evU-No-VOb"/>
+                            <constraint firstItem="5mN-Ri-LbN" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="dYh-51-wBV"/>
+                            <constraint firstItem="RGS-gI-i2m" firstAttribute="top" secondItem="EDp-Bx-Xxr" secondAttribute="bottom" constant="5" id="ect-Xr-baD"/>
                             <constraint firstItem="RGS-gI-i2m" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" id="gvy-i7-67B"/>
-                            <constraint firstItem="EDp-Bx-Xxr" firstAttribute="top" secondItem="xDF-xE-b4D" secondAttribute="top" constant="150" id="zzh-vu-NAn"/>
+                            <constraint firstItem="tg7-HW-xai" firstAttribute="top" secondItem="RGS-gI-i2m" secondAttribute="bottom" constant="14" id="hcj-Wk-ReT"/>
+                            <constraint firstItem="PqE-CF-rGo" firstAttribute="centerX" secondItem="QkA-eM-UAi" secondAttribute="centerX" id="lSC-rd-neK"/>
+                            <constraint firstItem="ap4-pi-iSn" firstAttribute="top" secondItem="tg7-HW-xai" secondAttribute="bottom" constant="8" id="mp9-qB-RSd"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="5mN-Ri-LbN" secondAttribute="trailing" constant="8" id="ngf-jq-xZJ"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="tg7-HW-xai" secondAttribute="trailing" constant="106" id="q3h-gj-jjp"/>
+                            <constraint firstItem="xDF-xE-b4D" firstAttribute="trailing" secondItem="o86-sJ-ufZ" secondAttribute="trailing" constant="8" id="qkR-oF-vgW"/>
+                            <constraint firstItem="QkA-eM-UAi" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="61" id="wO7-cn-uVR"/>
+                            <constraint firstItem="LIK-NY-hjg" firstAttribute="leading" secondItem="xDF-xE-b4D" secondAttribute="leading" constant="8" id="xfZ-yw-XOz"/>
+                            <constraint firstItem="EDp-Bx-Xxr" firstAttribute="top" secondItem="xDF-xE-b4D" secondAttribute="top" constant="90" id="zzh-vu-NAn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xDF-xE-b4D"/>
                     </view>
@@ -75,7 +169,13 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="hourLabel" destination="EDp-Bx-Xxr" id="WI0-8H-qbC"/>
+                        <outlet property="CurrentLocationLabel" destination="RGS-gI-i2m" id="Mug-X6-6Yw"/>
+                        <outlet property="datumLabel" destination="KHS-N9-n6H" id="tVA-bu-f99"/>
+                        <outlet property="goldenHourSunriseLabel" destination="LfH-Xz-BEv" id="hct-UD-wgG"/>
+                        <outlet property="goldenHourSunsetLabel" destination="o86-sJ-ufZ" id="5jK-8e-DG9"/>
+                        <outlet property="hourLabel" destination="EDp-Bx-Xxr" id="ams-NT-wEW"/>
+                        <outlet property="sunriseLabel" destination="QkA-eM-UAi" id="c5O-ja-lUj"/>
+                        <outlet property="sunsetLabel" destination="ap4-pi-iSn" id="oTo-9O-BqC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmj-ia-Uqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -90,6 +190,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="W8j-Vz-Thl" kind="relationship" relationship="viewControllers" id="9Ik-6d-oEv"/>
@@ -102,6 +204,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cc-temse-achtergrond-2017" width="1630" height="1080"/>
+        <image name="Golden Hour Sunset iOS7 iPhone 5 Wallpaper" width="640" height="1136"/>
+        <image name="sunrise" width="64" height="64"/>
+        <image name="sunset" width="64" height="64"/>
     </resources>
 </document>

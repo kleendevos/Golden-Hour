@@ -13,6 +13,9 @@
 		2F344E921F9E159A0001D4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F344E911F9E159A0001D4F3 /* Assets.xcassets */; };
 		2F344E951F9E159A0001D4F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F344E931F9E159A0001D4F3 /* LaunchScreen.storyboard */; };
 		2F344E9D1F9E1D170001D4F3 /* FirtstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F344E9C1F9E1D170001D4F3 /* FirtstViewController.swift */; };
+		2FE5EC4D1F9F246E00454A99 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE5EC4C1F9F246E00454A99 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2FE5EC4F1F9F5CF700454A99 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5EC4E1F9F5CF700454A99 /* Time.swift */; };
+		2FE5EC511F9F756400454A99 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5EC501F9F756400454A99 /* ApiResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2F344E941F9E159A0001D4F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F344E961F9E159A0001D4F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F344E9C1F9E1D170001D4F3 /* FirtstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirtstViewController.swift; sourceTree = "<group>"; };
+		2FE5EC4C1F9F246E00454A99 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2FE5EC4E1F9F5CF700454A99 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		2FE5EC501F9F756400454A99 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE5EC4D1F9F246E00454A99 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				2F344E891F9E159A0001D4F3 /* Golden Hour */,
 				2F344E881F9E159A0001D4F3 /* Products */,
+				2FE5EC4B1F9F246E00454A99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +67,22 @@
 				2F344E8A1F9E159A0001D4F3 /* AppDelegate.swift */,
 				2F344E8C1F9E159A0001D4F3 /* ViewController.swift */,
 				2F344E9C1F9E1D170001D4F3 /* FirtstViewController.swift */,
+				2FE5EC4E1F9F5CF700454A99 /* Time.swift */,
+				2FE5EC501F9F756400454A99 /* ApiResult.swift */,
 				2F344E8E1F9E159A0001D4F3 /* Main.storyboard */,
 				2F344E911F9E159A0001D4F3 /* Assets.xcassets */,
 				2F344E931F9E159A0001D4F3 /* LaunchScreen.storyboard */,
 				2F344E961F9E159A0001D4F3 /* Info.plist */,
 			);
 			path = "Golden Hour";
+			sourceTree = "<group>";
+		};
+		2FE5EC4B1F9F246E00454A99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FE5EC4C1F9F246E00454A99 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +118,11 @@
 					2F344E861F9E159A0001D4F3 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE5EC4F1F9F5CF700454A99 /* Time.swift in Sources */,
 				2F344E8D1F9E159A0001D4F3 /* ViewController.swift in Sources */,
+				2FE5EC511F9F756400454A99 /* ApiResult.swift in Sources */,
 				2F344E9D1F9E1D170001D4F3 /* FirtstViewController.swift in Sources */,
 				2F344E8B1F9E159A0001D4F3 /* AppDelegate.swift in Sources */,
 			);
